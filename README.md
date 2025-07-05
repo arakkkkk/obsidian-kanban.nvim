@@ -12,11 +12,13 @@ Compatible with [obsidian kanban](https://github.com/mgmeyers/obsidian-kanban).
 - ripgrep
 
 ## Installation
-```
+```lua
+{
     "obsidian-nvim/obsidian.nvim",
 	dependencies = {
 		"obsidian-nvim/obsidian-kanban.nvim", -- makes sure your plugin loads first
 	},
+}
 ```
 
 ## Usage
