@@ -6,7 +6,7 @@ Task information is import and export by markdown file.
 Compatible with [obsidian kanban](https://github.com/mgmeyers/obsidian-kanban).
 
 ## screenshots
-![demo](./doc/demo2.gif)
+![demo](./doc/demo.gif)
 
 ## Requirements
 - ripgrep
@@ -15,7 +15,7 @@ Compatible with [obsidian kanban](https://github.com/mgmeyers/obsidian-kanban).
 ```
     "obsidian-nvim/obsidian.nvim",
 	dependencies = {
-		"arakkkkk/obsidian-kanban.nvim", -- makes sure your plugin loads first
+		"obsidian-nvim/obsidian-kanban.nvim", -- makes sure your plugin loads first
 	},
 ```
 
@@ -43,7 +43,7 @@ All setup options are [here](./lua/kanban/ops.lua).
 - Line beginning with `@` is **due**.
 
 ### Optional telescope search
-If you installed telescope.nvim, you can search kanban project files by `KanbanOpen telescope` command.
+If you installed telescope.nvim, you can search kanban project files by `:Obsidian kanban telescope` command.
 
 This command search markdown files by `kanban-plugin: .+` which is same options to Obsidian kanban.
 

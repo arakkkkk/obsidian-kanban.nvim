@@ -152,11 +152,7 @@ end
 
 M.setup()
 
-return function(client, data)
-	local note = client:current_note()
-	if not note then
-		return
-	end
+return function(_, data)
 	local method = data.fargs[1]
 	local arg = data.fargs[2]
 	if method == "create" then
